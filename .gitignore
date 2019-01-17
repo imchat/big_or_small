@@ -1,0 +1,24 @@
+.DS_Store
+/webclient/node_modules
+/webclient/dist
+
+/webclient/tests/e2e/videos/
+/webclient/tests/e2e/screenshots/
+
+# local env files
+/webclient/.env.local
+/webclient/.env.*.local
+
+# Log files
+/webclient/npm-debug.log*
+/webclient/yarn-debug.log*
+/webclient/yarn-error.log*
+
+# Editor directories and files
+/webclient/.idea
+/webclient/.vscode
+/webclient/*.suo
+/webclient/*.ntvs*
+/webclient/*.njsproj
+/webclient/*.sln
+/webclient/*.sw*
