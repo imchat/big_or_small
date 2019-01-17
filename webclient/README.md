@@ -68,7 +68,7 @@ cd big_or_small/webclient
 yarn
 ```
 
-#### 测试项目:
+#### 预览项目:
 
 ```bash
 yarn serve:dev
