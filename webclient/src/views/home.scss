@@ -1,0 +1,245 @@
+.home {
+  .big{
+    color: #4b0;
+  }
+  .small{
+    color: #f44;
+  }
+  .hash-txt{
+    word-break: break-all;
+    text-align: left;
+    padding: 0px 10px;
+  }
+  .hash-box{
+    font-size: 14px;
+    margin-top: 3px;
+  }
+  /*猜奖上轮结果*/
+  .prev-result {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 10px 0px;
+    .title {
+      font-size: 18px;
+    }
+    .user-count {
+      font-size: 18px;
+    }
+    .status {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    .amount {
+      font-size: 18px;
+    }
+    .txt {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+  /*当前猜奖状态*/
+  .guess-box {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    .title {
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    .curr-player {
+      .txt{
+        color: #f44;
+        font-size: 18px;
+      }
+    }
+    .curr-pool {
+      .amount {
+        font-size: 28px;
+        color: #138de7;
+        position: relative;
+        top: 3px;
+        display: inline-block;
+        text-align: center;
+        min-width: 50px;
+      }
+    }
+    .real-success {
+      font-size: 14px;
+      margin-top: 10px;
+      .status {
+        font-size: 18px;
+      }
+    }
+    .countdown{
+      font-size: 16px;
+      margin-left: 10px;
+      position: relative;
+      top: 1px;
+      .txt{
+        color: #f44;
+      }
+    }
+    .pool-usercout{
+      padding: 0px 28px;
+      margin-top: -15px;
+      font-size: 14px;
+      .left, .right{
+        display: inline-block;
+        width: 50%;
+      }
+      .left{
+        text-align: left;
+      }
+      .right{
+        text-align: right;
+      }
+    }
+    .pool-rate {
+      width: 84%;
+      margin-left: 8%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      .item {
+        display: inline-block;
+        color: #fff;
+        font-size: 14px;
+        height: 36px;
+        line-height: 36px;
+        &.left {
+          text-align: left;
+          padding-left: 10px;
+          margin-left: -10px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+        &.right {
+          text-align: right;
+          padding-right: 10px;
+          margin-right: -10px;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+      }
+      /*所有都压大*/
+      &.big-win-all{
+        .item:nth-child(1){
+          background-color: #4b0;
+          width: 70%;
+        }
+        .item:nth-child(2){
+          background-color: #4b0;
+          width: 30%;
+          color: #4b0;
+        }
+      }
+      /*所有都压小*/
+      &.small-win-all{
+        .item:nth-child(1){
+          background-color: #f44;
+          width: 70%;
+          color: #f44;
+        }
+        .item:nth-child(2){
+          background-color: #f44;
+          width: 30%;
+        }
+
+      }
+      /*押大赢*/
+      &.big-win{
+        .item:nth-child(1){
+          background-color: #4b0;
+          width: 70%;
+        }
+        .item:nth-child(2){
+          background-color: #f44;
+          width: 30%;
+        }
+      }
+      /*押小赢*/
+      &.small-win{
+        .item:nth-child(1){
+          background-color: #4b0;
+          width: 30%;
+        }
+        .item:nth-child(2){
+          background-color: #f44;
+          width: 70%;
+        }
+      }
+      /*平局*/
+      &.average{
+        .item:nth-child(1){
+          background-color: #4b0;
+          width: 50%;
+        }
+        .item:nth-child(2){
+          background-color: #f44;
+          width: 50%;
+        }
+      }
+    }
+  }
+  /*产品列表*/
+  .goods-list{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px dashed #ddd;
+    .item {
+      display: inline-block;
+      width: 34%;
+      color: #fff;
+      margin-top: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+  /*投注结果*/
+  .select-result{
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+    border-top: 1px dashed #ddd;
+    padding-top: 10px;
+    font-size: 14px;
+    .amount{
+      font-size: 18px;
+    }
+    .status{
+      font-size: 18px;
+    }
+    .tips{
+      color: #f44;
+    }
+  }
+}
+.dotting {
+  display: inline-block; min-width: 2px; min-height: 2px;
+  margin-right: 10px;
+  position: relative;
+  top: -5px;
+  box-shadow: 2px 0 currentColor, 6px 0 currentColor, 10px 0 currentColor; 
+  -webkit-animation: dot 1.5s infinite step-start both;
+  animation: dot 1.5s infinite step-start both;
+  .dotting::before { content: ''; }
+}
+@-webkit-keyframes dot {
+  25% { box-shadow: none; }
+  50% { box-shadow: 2px 0 currentColor; }
+  75% { box-shadow: 2px 0 currentColor, 6px 0 currentColor; }
+}
+@keyframes dot {
+  25% { box-shadow: none; }
+  50% { box-shadow: 2px 0 currentColor; }
+  75% { box-shadow: 2px 0 currentColor, 6px 0 currentColor; }
+}

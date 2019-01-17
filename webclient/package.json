@@ -1,0 +1,47 @@
+{
+  "name": "big-or-small",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit",
+
+    "serve:dev": "vue-cli-service serve --mode dev",
+    "serve:prod": "vue-cli-service serve --mode prod",
+    "build:dev": "vue-cli-service build --mode dev",
+    "build:prod": "vue-cli-service build --mode prod",
+    "deploy:dev": "scp -r dist/dev/* dev_imchat://data/www/f.dev.iweipeng.com/games",
+    "deploy:prod": "scp -r dist/prod/* dev_imchat://data/www/f.dev.iweipeng.com/guess-size",
+    "clean": "rm -rf dist/*",
+    "buildPack": "vue-cli-service build --target lib --name tim public/jsimchat-1.0.0.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "register-service-worker": "^1.5.2",
+    "vant": "^1.5.1",
+    "vue": "^2.5.21",
+    "vue-awesome-countdown": "^1.0.12",
+    "vue-count-to": "^1.0.13",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-plugin-pwa": "^3.2.0",
+    "@vue/cli-plugin-unit-mocha": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.11.0",
+    "chai": "^4.1.2",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
